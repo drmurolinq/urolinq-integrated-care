@@ -1,8 +1,25 @@
+import HeroBlock from '../components/HeroBlock.jsx'
+import NumberedList from '../components/NumberedList.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 
-// NOTE: bookHref currently points to the site's virtual-care booking page.
-// Replace with the exact Wix Bookings URL per service once confirmed.
 const BOOK_URL = 'https://www.urolinq.com/virtual-care'
+
+const FLOW_STEPS = [
+  "You'll need a smartphone, tablet, or computer",
+  'Book your consultation',
+  'Complete pre-visit form (optional)',
+  'Join the virtual consultation',
+  'Receive your care plan',
+]
+
+const BENEFITS = [
+  'Save Time',
+  'Location Freedom',
+  'Cost Effective',
+  'Secure & Private',
+  'Comfortable Environment',
+  'Flexible Scheduling',
+]
 
 const SERVICES = [
   { title: 'Virtual Consultation', duration: '30 min', mode: 'Video/Online', price: 'R 850' },
@@ -14,10 +31,22 @@ const SERVICES = [
 export default function VirtualCare() {
   return (
     <div style={{ padding: '24px 20px 10px' }}>
-      <h1 style={{ fontFamily: 'var(--display-font)', fontSize: 22, margin: '0 0 6px' }}>Virtual Care</h1>
-      <p style={{ fontSize: 13.5, color: 'var(--text-muted)', margin: '0 0 20px', lineHeight: 1.5 }}>
-        Secure consultations from wherever you are. Ideal for initial assessments, follow-ups, and ongoing management.
-      </p>
+      <HeroBlock
+        image="/images/source-1.png"
+        alt="Virtual consultation"
+        heading="How UROLINQ Virtual Care Flows"
+      >
+        <NumberedList items={FLOW_STEPS} />
+      </HeroBlock>
+
+      <h2 style={{ fontFamily: 'var(--display-font)', fontSize: 17, margin: '0 0 10px', fontWeight: 600 }}>
+        Why Virtual Consultation
+      </h2>
+      <NumberedList items={BENEFITS} />
+
+      <h2 style={{ fontFamily: 'var(--display-font)', fontSize: 17, margin: '0 0 10px', fontWeight: 600 }}>
+        Book a Session
+      </h2>
       {SERVICES.map((s) => (
         <ServiceCard key={s.title} {...s} bookHref={BOOK_URL} />
       ))}
