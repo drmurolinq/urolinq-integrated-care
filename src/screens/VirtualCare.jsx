@@ -32,7 +32,7 @@ export default function VirtualCare() {
   return (
     <div style={{ padding: '24px 20px 10px' }}>
       <HeroBlock
-        image="/images/source-1.png"
+        image="/images/virtual-care-hero.jpg"
         alt="Virtual consultation"
         heading="How UROLINQ Virtual Care Flows"
       >

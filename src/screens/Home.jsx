@@ -2,7 +2,30 @@ import PulseDivider from '../components/PulseDivider.jsx'
 
 export default function Home({ onNavigate }) {
   return (
-    <div style={{ padding: '28px 20px 10px' }}>
+    <div style={{ padding: '24px 20px 10px' }}>
+      <div style={{ position: 'relative', marginBottom: 34 }}>
+        <img
+          src="/images/home-hero.jpg"
+          alt="Patient using the UROLINQ app"
+          loading="eager"
+          onError={(e) => { e.currentTarget.style.display = 'none' }}
+          style={{
+            width: '100%', height: 170, objectFit: 'cover', borderRadius: 14,
+            border: '1px solid var(--border)', display: 'block',
+          }}
+        />
+        <div style={{
+          position: 'absolute', left: 0, bottom: -22,
+          width: 44, height: 44, borderRadius: '50%',
+          background: 'var(--bg-elevated)', border: '2px solid var(--bg)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }}>
+          <svg width="22" height="22" viewBox="0 0 26 26" fill="none">
+            <circle cx="13" cy="13" r="12" stroke="var(--accent)" strokeWidth="1.4" />
+            <path d="M8 9c3 0 3 4 5 4s2-4 5-4" stroke="var(--accent)" strokeWidth="1.6" strokeLinecap="round" />
+          </svg>
+        </div>
+      </div>
       <p style={{
         display: 'inline-block', margin: '0 0 14px', fontSize: 12, fontWeight: 600,
         letterSpacing: '0.06em', color: 'var(--accent-soft)', background: 'var(--accent-dim)',

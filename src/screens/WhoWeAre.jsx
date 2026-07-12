@@ -18,7 +18,7 @@ export default function WhoWeAre() {
   return (
     <div style={{ padding: '24px 20px 10px' }}>
       <HeroBlock
-        image="/images/patient-care.png"
+        image="/images/who-we-are-hero.jpg"
         alt="Patient care"
         heading="Who We Are"
       >
@@ -34,6 +34,12 @@ export default function WhoWeAre() {
       <h2 style={{ fontFamily: 'var(--display-font)', fontSize: 16, margin: '0 0 12px', fontWeight: 600 }}>
         Your Integrated Journey
       </h2>
+      <img
+        src="/images/journey-infographic.jpg"
+        alt="The UROLINQ Integrated Care Journey"
+        loading="lazy"
+        style={{ width: '100%', borderRadius: 12, border: '1px solid var(--border)', marginBottom: 16, display: 'block' }}
+      />
       <NumberedList items={STAGES} />
 
       <p style={{ fontSize: 13.5, color: 'var(--text-muted)', lineHeight: 1.55, margin: '0 0 14px' }}>
