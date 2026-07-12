@@ -1,15 +1,15 @@
 :root {
-  --bg: #170A28;
-  --bg-elevated: #241640;
-  --bg-elevated-2: #2E1D52;
-  --accent: #8B7FD6;
-  --accent-soft: #C9C2EE;
-  --accent-dim: rgba(139, 127, 214, 0.18);
+  --bg: #150826;
+  --bg-elevated: #251340;
+  --bg-elevated-2: #33195a;
+  --accent: #9C8FE8;
+  --accent-soft: #D6CFF5;
+  --accent-dim: rgba(156, 143, 232, 0.16);
   --text: #FFFFFF;
-  --text-muted: #B0A6CC;
-  --border: rgba(139, 127, 214, 0.22);
-  --display-font: 'Space Grotesk', system-ui, sans-serif;
-  --body-font: 'Inter', system-ui, sans-serif;
+  --text-muted: #ADA1CC;
+  --border: rgba(156, 143, 232, 0.20);
+  --display-font: 'Poppins', system-ui, sans-serif;
+  --body-font: 'Poppins', system-ui, sans-serif;
   color-scheme: dark;
 }
 
@@ -33,7 +33,9 @@ html, body {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: var(--bg);
+  background:
+    radial-gradient(120% 60% at 50% 0%, rgba(156, 143, 232, 0.14) 0%, rgba(156, 143, 232, 0) 60%),
+    var(--bg);
 }
 
 button, a { font-family: inherit; }

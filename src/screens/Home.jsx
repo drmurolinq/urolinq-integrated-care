@@ -16,14 +16,12 @@ export default function Home({ onNavigate }) {
         />
         <div style={{
           position: 'absolute', left: 0, bottom: -22,
-          width: 44, height: 44, borderRadius: '50%',
+          width: 44, height: 44, borderRadius: 12,
           background: 'var(--bg-elevated)', border: '2px solid var(--bg)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
+          boxShadow: '0 4px 14px rgba(0,0,0,0.35)',
         }}>
-          <svg width="22" height="22" viewBox="0 0 26 26" fill="none">
-            <circle cx="13" cy="13" r="12" stroke="var(--accent)" strokeWidth="1.4" />
-            <path d="M8 9c3 0 3 4 5 4s2-4 5-4" stroke="var(--accent)" strokeWidth="1.6" strokeLinecap="round" />
-          </svg>
+          <img src="/images/logo-square.png" alt="" style={{ width: 28, height: 28, borderRadius: 6 }} />
         </div>
       </div>
       <p style={{
