@@ -35,15 +35,14 @@ export default function Home({ onNavigate }) {
 
       <h1 style={{
         fontFamily: 'var(--display-font)', fontSize: 30, lineHeight: 1.2,
-        margin: '0 0 14px', fontWeight: 700,
+        margin: '0 0 14px', fontWeight: 700, textAlign: 'center',
       }}>
         Specialist Urology
       </h1>
       <p style={{
-        fontFamily: 'var(--display-font)', fontSize: 18, fontWeight: 600,
-        whiteSpace: 'nowrap', letterSpacing: '-0.01em',
-        color: '#F1EDFF', margin: '-8px 0 16px',
-        textShadow: '0 0 18px rgba(156,143,232,0.55)',
+        fontFamily: 'var(--display-font)', fontSize: 18, fontWeight: 700,
+        whiteSpace: 'nowrap', letterSpacing: '-0.01em', textAlign: 'center',
+        color: 'var(--accent-soft)', margin: '-8px 0 16px',
       }}>
         In Person. Online. Connected.
       </p>
