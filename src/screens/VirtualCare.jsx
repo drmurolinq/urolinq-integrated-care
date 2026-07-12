@@ -2,7 +2,8 @@ import HeroBlock from '../components/HeroBlock.jsx'
 import NumberedList from '../components/NumberedList.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
 
-const BOOK_URL = 'https://www.urolinq.com/virtual-care'
+const BOOK_URL_VIRTUAL = 'https://care.urolinq.online/book-online'
+const BOOK_URL_EREFERRAL = 'https://care.urolinq.online/e-referral'
 
 const FLOW_STEPS = [
   "You'll need a smartphone, tablet, or computer",
@@ -22,10 +23,10 @@ const BENEFITS = [
 ]
 
 const SERVICES = [
-  { title: 'Virtual Consultation', duration: '30 min', mode: 'Video/Online', price: 'R 850' },
-  { title: 'Follow-up Virtual Consultation', duration: '20 min', mode: 'Video/Online', price: 'R 425' },
-  { title: 'Virtual Chronic Disease Management', duration: '15 min', mode: 'Video/Online', price: 'R 350' },
-  { title: 'e-Referral', duration: '~1 hr', mode: 'Online submission', price: 'Billing Variable' },
+  { title: 'Virtual Consultation', duration: '30 min', mode: 'Video/Online', price: 'R 850', bookHref: BOOK_URL_VIRTUAL },
+  { title: 'Follow-up Virtual Consultation', duration: '20 min', mode: 'Video/Online', price: 'R 425', bookHref: BOOK_URL_VIRTUAL },
+  { title: 'Virtual Chronic Disease Management', duration: '15 min', mode: 'Video/Online', price: 'R 350', bookHref: BOOK_URL_VIRTUAL },
+  { title: 'e-Referral', duration: '~1 hr', mode: 'Online submission', price: 'Billing Variable', bookHref: BOOK_URL_EREFERRAL },
 ]
 
 export default function VirtualCare() {
@@ -48,7 +49,7 @@ export default function VirtualCare() {
         Book a Session
       </h2>
       {SERVICES.map((s) => (
-        <ServiceCard key={s.title} {...s} bookHref={BOOK_URL} />
+        <ServiceCard key={s.title} {...s} />
       ))}
     </div>
   )

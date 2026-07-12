@@ -2,7 +2,7 @@ import HeroBlock from '../components/HeroBlock.jsx'
 import TagList from '../components/TagList.jsx'
 import LocationCard from '../components/LocationCard.jsx'
 
-const BOOK_URL = 'https://www.urolinq.com/in-clinic-care'
+const BOOK_URL = 'https://care.urolinq.online/in-clinic-care-services'
 
 const SERVICE_TAGS = [
   'Investigations & Imaging',
