@@ -25,7 +25,7 @@ export default function TabBar({ active, onChange }) {
             style={{
               flex: 1, background: 'none', border: 'none',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4,
-              padding: '10px 4px 8px', color: isActive ? 'var(--accent-soft)' : 'var(--text-muted)',
+              padding: '10px 4px 8px', color: '#FFFFFF',
             }}
           >
             <Icon active={isActive} />

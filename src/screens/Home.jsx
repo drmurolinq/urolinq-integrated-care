@@ -25,13 +25,15 @@ export default function Home({ onNavigate }) {
         </div>
       </div>
 
-      <p style={{
-        display: 'inline-block', margin: '0 0 14px', fontSize: 12, fontWeight: 600,
-        letterSpacing: '0.06em', color: 'var(--accent-soft)', background: 'var(--accent-dim)',
-        padding: '5px 12px', borderRadius: 999,
-      }}>
-        INTEGRATED SPECIALIST UROLOGY CARE
-      </p>
+      <div style={{ textAlign: 'center' }}>
+        <p style={{
+          display: 'inline-block', margin: '0 0 14px', fontSize: 12, fontWeight: 600,
+          letterSpacing: '0.06em', color: 'var(--accent-soft)', background: 'var(--accent-dim)',
+          padding: '5px 12px', borderRadius: 999,
+        }}>
+          INTEGRATED SPECIALIST UROLOGY CARE
+        </p>
+      </div>
 
       <h1 style={{
         fontFamily: 'var(--display-font)', fontSize: 30, lineHeight: 1.2,
@@ -47,7 +49,7 @@ export default function Home({ onNavigate }) {
         In Person. Online. Connected.
       </p>
 
-      <p style={{ fontSize: 14.5, lineHeight: 1.6, color: 'var(--text-muted)', margin: '0 0 24px' }}>
+      <p style={{ fontSize: 14.5, lineHeight: 1.6, color: 'var(--text-muted)', margin: '0 0 24px', textAlign: 'center' }}>
         Access specialist urological care your way. Whether you prefer to visit our clinic in
         person or consult securely by video or telephone, UROLINQ Integrated Care connects you.
       </p>
