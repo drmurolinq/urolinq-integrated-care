@@ -34,11 +34,19 @@ export default function Home({ onNavigate }) {
       </p>
 
       <h1 style={{
-        fontFamily: 'var(--display-font)', fontSize: 30, lineHeight: 1.15,
+        fontFamily: 'var(--display-font)', fontSize: 30, lineHeight: 1.2,
         margin: '0 0 14px', fontWeight: 700,
       }}>
-        Specialist Urology<br /><span style={{ color: 'var(--accent-soft)' }}>In Person. Online. Connected.</span>
+        Specialist Urology
       </h1>
+      <p style={{
+        fontFamily: 'var(--display-font)', fontSize: 18, fontWeight: 600,
+        whiteSpace: 'nowrap', letterSpacing: '-0.01em',
+        color: '#F1EDFF', margin: '-8px 0 16px',
+        textShadow: '0 0 18px rgba(156,143,232,0.55)',
+      }}>
+        In Person. Online. Connected.
+      </p>
 
       <p style={{ fontSize: 14.5, lineHeight: 1.6, color: 'var(--text-muted)', margin: '0 0 24px' }}>
         Access specialist urological care your way. Whether you prefer to visit our clinic in
