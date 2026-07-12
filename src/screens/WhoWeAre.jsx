@@ -65,14 +65,14 @@ export default function WhoWeAre() {
           Call Us
         </a>
         <a
-          href="https://care.urolinq.online/"
+          href="https://urolinq.online"
           target="_blank" rel="noopener noreferrer"
           style={{
             background: 'transparent', color: 'var(--text)', fontWeight: 600, fontSize: 15,
             padding: '14px', borderRadius: 12, border: '1px solid var(--border)', textAlign: 'center', display: 'block',
           }}
         >
-          Visit Website
+          Visit Urolinq Pro
         </a>
       </div>
 
