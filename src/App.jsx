@@ -6,6 +6,8 @@ import VirtualCare from './screens/VirtualCare.jsx'
 import InClinicCare from './screens/InClinicCare.jsx'
 import WhoWeAre from './screens/WhoWeAre.jsx'
 import More from './screens/More.jsx'
+import PrivacyPolicy from './screens/PrivacyPolicy.jsx'
+import TermsOfUse from './screens/TermsOfUse.jsx'
 
 const SCREENS = {
   home: Home,
@@ -13,6 +15,8 @@ const SCREENS = {
   clinic: InClinicCare,
   about: WhoWeAre,
   more: More,
+  privacy: PrivacyPolicy,
+  terms: TermsOfUse,
 }
 
 export default function App() {

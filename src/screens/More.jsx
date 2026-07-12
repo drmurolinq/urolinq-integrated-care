@@ -3,8 +3,8 @@ const LINKS = [
   { label: 'Shop (Health Supplements)', href: 'https://www.urolinq.com/shop' },
   { label: 'Contact Us', href: 'https://www.urolinq.com/contact-us' },
   { label: 'Publications', href: 'https://www.urolinq.com/publications' },
-  { label: 'Privacy Policy', href: 'https://www.urolinq.com/privacy-policy' },
-  { label: 'Terms of Use', href: 'https://www.urolinq.com/terms-of-use' },
+  { label: 'Privacy Policy', nav: 'privacy' },
+  { label: 'Terms of Use', nav: 'terms' },
 ]
 
 const SOCIALS = [
@@ -16,26 +16,35 @@ const SOCIALS = [
   { label: 'TikTok', href: 'https://tiktok.com' },
 ]
 
-export default function More() {
+export default function More({ onNavigate }) {
   const year = new Date().getFullYear()
   return (
     <div style={{ padding: '24px 20px 10px' }}>
       <h1 style={{ fontFamily: 'var(--display-font)', fontSize: 22, margin: '0 0 18px' }}>More</h1>
 
       <div style={{ border: '1px solid var(--border)', borderRadius: 14, overflow: 'hidden', marginBottom: 28 }}>
-        {LINKS.map((l, i) => (
-          <a
-            key={l.label} href={l.href} target="_blank" rel="noopener noreferrer"
-            style={{
-              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              padding: '14px 16px', fontSize: 14, background: 'var(--bg-elevated)',
-              borderBottom: i < LINKS.length - 1 ? '1px solid var(--border)' : 'none',
-            }}
-          >
-            {l.label}
-            <span style={{ color: 'var(--text-muted)' }}>›</span>
-          </a>
-        ))}
+        {LINKS.map((l, i) => {
+          const rowStyle = {
+            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+            padding: '14px 16px', fontSize: 14, background: 'var(--bg-elevated)',
+            borderBottom: i < LINKS.length - 1 ? '1px solid var(--border)' : 'none',
+            width: '100%', border: 'none', textAlign: 'left', color: 'var(--text)',
+          }
+          if (l.nav) {
+            return (
+              <button key={l.label} onClick={() => onNavigate(l.nav)} style={rowStyle}>
+                {l.label}
+                <span style={{ color: 'var(--text-muted)' }}>›</span>
+              </button>
+            )
+          }
+          return (
+            <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" style={rowStyle}>
+              {l.label}
+              <span style={{ color: 'var(--text-muted)' }}>›</span>
+            </a>
+          )
+        })}
       </div>
 
       <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 16 }}>
