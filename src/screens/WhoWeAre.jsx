@@ -44,6 +44,37 @@ export default function WhoWeAre() {
       />
       <NumberedList items={STAGES} />
 
+      <h2 style={{ fontFamily: 'var(--display-font)', fontSize: 16, margin: '0 0 12px', fontWeight: 600 }}>
+        Meet Our Specialist
+      </h2>
+      <div style={{ background: 'var(--bg-elevated)', border: '1px solid var(--border)', borderRadius: 14, padding: '16px', marginBottom: 24 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+          <div style={{
+            width: 52, height: 52, borderRadius: '50%', background: 'var(--bg)',
+            border: '1px dashed var(--border)', display: 'flex', alignItems: 'center',
+            justifyContent: 'center', flexShrink: 0,
+          }}>
+            <span style={{ fontSize: 9, color: 'var(--text-muted)', textAlign: 'center' }}>Photo</span>
+          </div>
+          <div>
+            <h3 style={{ margin: 0, fontFamily: 'var(--display-font)', fontSize: 15.5, fontWeight: 600 }}>Dr Bogosi Mogale</h3>
+            <p style={{ margin: 0, fontSize: 12, color: 'var(--accent-soft)' }}>
+              Dipl. Bus. Mgmt. | BSc | MBBCh | FCS (SA) Urology
+            </p>
+          </div>
+        </div>
+        <p style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.55, margin: 0 }}>
+          Dr Mogale is a Specialist Urologist and HPCSA-registered Fellow of the College of
+          Urologists, with over three decades of clinical, academic, and health policy experience.
+          He trained across Chris Hani Baragwanath, Charlotte Maxeke-Johannesburg General, and
+          Helen Joseph Hospitals before building a long-standing private urology practice in
+          Johannesburg. He later served as South Africa's Senior Health Representative to the
+          European Union and authored the national Aid Effectiveness Framework for Health. Dr
+          Mogale founded UROLINQ to bring specialist urological care — in-person and virtual —
+          into one connected, patient-centred experience.
+        </p>
+      </div>
+
       <p style={{ fontSize: 13.5, color: 'var(--text-muted)', lineHeight: 1.55, margin: '0 0 14px' }}>
         Supported by UROLINQ PRO, our integrated digital platform, we combine evidence-based
         medicine with innovative technology to deliver personalised care, monitor outcomes, and
