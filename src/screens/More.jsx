@@ -8,12 +8,12 @@ const LINKS = [
 ]
 
 const SOCIALS = [
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'Facebook', href: 'https://facebook.com' },
-  { label: 'X', href: 'https://x.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'YouTube', href: 'https://youtube.com' },
-  { label: 'TikTok', href: 'https://tiktok.com' },
+  { label: 'Instagram', href: 'https://www.instagram.com/urolinq1/' },
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61574915480030' },
+  { label: 'X', href: 'https://x.com/urolinq' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/docmogaleb/' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@urolinq' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@drurolinq' },
 ]
 
 export default function More({ onNavigate }) {
