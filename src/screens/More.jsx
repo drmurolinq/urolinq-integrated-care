@@ -1,3 +1,5 @@
+import SocialIcons from '../components/SocialIcons.jsx'
+
 const LINKS = [
   { label: 'FAQs', href: 'https://www.urolinq.com/faqs' },
   { label: 'Shop (Health Supplements)', href: 'https://www.urolinq.com/shop' },
@@ -47,17 +49,8 @@ export default function More({ onNavigate }) {
         })}
       </div>
 
-      <div style={{ display: 'flex', gap: 16, justifyContent: 'center', marginBottom: 16 }}>
-        {SOCIALS.map((s) => (
-          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-             style={{
-               width: 34, height: 34, borderRadius: '50%', border: '1px solid var(--border)',
-               display: 'flex', alignItems: 'center', justifyContent: 'center',
-               fontSize: 11, color: 'var(--text-muted)',
-             }}>
-            {s.label[0]}
-          </a>
-        ))}
+      <div style={{ marginBottom: 16 }}>
+        <SocialIcons items={SOCIALS} />
       </div>
 
       <p style={{ textAlign: 'center', fontSize: 11.5, color: 'var(--text-muted)', margin: 0 }}>

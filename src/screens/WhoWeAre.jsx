@@ -1,5 +1,6 @@
 import HeroBlock from '../components/HeroBlock.jsx'
 import NumberedList from '../components/NumberedList.jsx'
+import SocialIcons from '../components/SocialIcons.jsx'
 
 const STAGES = [
   'Symptoms', 'UROLINQ PRO Assessment', 'Book Consultation', 'Consultation',
@@ -82,18 +83,7 @@ export default function WhoWeAre() {
         <p style={{ margin: 0, fontSize: 14, lineHeight: 1.5 }}>Illovo, Sandton, South Africa</p>
       </div>
 
-      <div style={{ display: 'flex', gap: 14, justifyContent: 'center' }}>
-        {SOCIALS.map((s) => (
-          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-             style={{
-               width: 34, height: 34, borderRadius: '50%', border: '1px solid var(--border)',
-               display: 'flex', alignItems: 'center', justifyContent: 'center',
-               fontSize: 11, color: 'var(--text-muted)',
-             }}>
-            {s.label[0]}
-          </a>
-        ))}
-      </div>
+      <SocialIcons items={SOCIALS} />
     </div>
   )
 }
