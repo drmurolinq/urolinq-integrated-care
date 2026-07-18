@@ -1,4 +1,5 @@
 import PulseDivider from '../components/PulseDivider.jsx'
+import ShareButton from '../components/ShareButton.jsx'
 
 export default function Home({ onNavigate }) {
   return (
@@ -97,6 +98,15 @@ export default function Home({ onNavigate }) {
         >
           Virtual Service Booking
         </button>
+      </div>
+
+      <div style={{ textAlign: 'center', marginTop: 20 }}>
+        <ShareButton
+          title="UROLINQ Integrated Care"
+          text="Specialist urology care — in person, online, connected."
+          url="https://urolinq.mobi"
+          label="Share UROLINQ"
+        />
       </div>
     </div>
   )
