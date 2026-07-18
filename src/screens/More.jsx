@@ -2,6 +2,7 @@ import SocialIcons from '../components/SocialIcons.jsx'
 
 const LINKS = [
   { label: 'FAQs', href: 'https://www.urolinq.com/faqs' },
+  { label: 'WhatsApp Us', href: 'https://wa.me/27755136564' },
   { label: 'Shop (Health Supplements)', href: 'https://www.urolinq.com/shop' },
   { label: 'Contact Us', href: 'https://www.urolinq.com/contact-us' },
   { label: 'Publications', href: 'https://www.urolinq.com/publications' },

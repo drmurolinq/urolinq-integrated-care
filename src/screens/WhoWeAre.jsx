@@ -98,6 +98,16 @@ export default function WhoWeAre() {
           Call Us
         </a>
         <a
+          href="https://wa.me/27755136564"
+          target="_blank" rel="noopener noreferrer"
+          style={{
+            background: '#25D366', color: '#0B2E13', fontWeight: 600, fontSize: 15,
+            padding: '14px', borderRadius: 12, textAlign: 'center', display: 'block',
+          }}
+        >
+          WhatsApp Us
+        </a>
+        <a
           href="https://urolinq.online"
           target="_blank" rel="noopener noreferrer"
           style={{
