@@ -1,6 +1,7 @@
 import HeroBlock from '../components/HeroBlock.jsx'
 import NumberedList from '../components/NumberedList.jsx'
 import ServiceCard from '../components/ServiceCard.jsx'
+import ShareButton from '../components/ShareButton.jsx'
 
 const BOOK_URL_VIRTUAL = 'https://care.urolinq.online/book-online'
 const BOOK_URL_EREFERRAL = 'https://care.urolinq.online/e-referral'
@@ -51,6 +52,15 @@ export default function VirtualCare() {
       {SERVICES.map((s) => (
         <ServiceCard key={s.title} {...s} />
       ))}
+
+      <div style={{ textAlign: 'center', marginTop: 8 }}>
+        <ShareButton
+          title="UROLINQ Virtual Care"
+          text="Secure virtual urology consultations, wherever you are."
+          url="https://urolinq.mobi/#virtual"
+          label="Share Virtual Care"
+        />
+      </div>
     </div>
   )
 }

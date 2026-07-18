@@ -1,6 +1,7 @@
 import HeroBlock from '../components/HeroBlock.jsx'
 import NumberedList from '../components/NumberedList.jsx'
 import SocialIcons from '../components/SocialIcons.jsx'
+import ShareButton from '../components/ShareButton.jsx'
 
 const STAGES = [
   'Symptoms', 'UROLINQ PRO Assessment', 'Book Consultation', 'Consultation',
@@ -125,6 +126,15 @@ export default function WhoWeAre() {
       </div>
 
       <SocialIcons items={SOCIALS} />
+
+      <div style={{ textAlign: 'center', marginTop: 20 }}>
+        <ShareButton
+          title="UROLINQ Integrated Care"
+          text="Meet Dr Bogosi Mogale and learn about UROLINQ's integrated urology care."
+          url="https://urolinq.mobi/#about"
+          label="Share Who We Are"
+        />
+      </div>
     </div>
   )
 }

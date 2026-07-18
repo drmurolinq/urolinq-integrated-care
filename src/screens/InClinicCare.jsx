@@ -1,6 +1,7 @@
 import HeroBlock from '../components/HeroBlock.jsx'
 import TagList from '../components/TagList.jsx'
 import LocationCard from '../components/LocationCard.jsx'
+import ShareButton from '../components/ShareButton.jsx'
 
 const BOOK_URL = 'https://care.urolinq.online/in-clinic-care-services'
 
@@ -54,6 +55,15 @@ export default function InClinicCare() {
       {LOCATIONS.map((loc) => (
         <LocationCard key={loc.title} {...loc} bookHref={BOOK_URL} />
       ))}
+
+      <div style={{ textAlign: 'center', marginTop: 8 }}>
+        <ShareButton
+          title="UROLINQ In-Clinic Care"
+          text="Specialist in-clinic urology care at Medgate and Apex."
+          url="https://urolinq.mobi/#clinic"
+          label="Share In-Clinic Care"
+        />
+      </div>
     </div>
   )
 }
