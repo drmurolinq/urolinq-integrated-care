@@ -12,7 +12,7 @@ const SOCIALS = [
   { label: 'Instagram', href: 'https://www.instagram.com/urolinq1/' },
   { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61574915480030' },
   { label: 'X', href: 'https://x.com/urolinq' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/docmogaleb/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/135297682/' },
   { label: 'YouTube', href: 'https://www.youtube.com/@urolinq' },
   { label: 'TikTok', href: 'https://www.tiktok.com/@drurolinq' },
 ]
